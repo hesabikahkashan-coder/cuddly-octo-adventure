@@ -5,7 +5,7 @@ Auto-halts trading when risk thresholds are breached.
 import asyncio
 from datetime import datetime, timezone, date
 from typing import Optional, Dict
-from ..core.logging import get_logger, get_trade_logger
+from .logger import get_logger, get_trade_logger
 
 logger = get_logger(__name__)
 trade_logger = get_trade_logger()

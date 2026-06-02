@@ -5,8 +5,8 @@ NO TRADE EXECUTES WITHOUT PASSING ALL RISK CHECKS.
 """
 import asyncio
 from typing import Optional, Dict, List
-from ..core.logging import get_logger, get_trade_logger
-from ..core.config import settings
+from .logger import get_logger, get_trade_logger
+from .config import settings
 from .models import TradeSignal, RiskValidationResult, RiskStatus, RejectionReason
 from .position_sizer import PositionSizer
 from .drawdown_guard import DrawdownGuard
