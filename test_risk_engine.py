@@ -4,8 +4,8 @@ Critical tests for the most important module.
 """
 import pytest
 import asyncio
-from ...backend.risk_engine.engine import RiskEngine
-from ...backend.risk_engine.models import TradeSignal, RiskStatus, RejectionReason
+from .engine import RiskEngine
+from .models import TradeSignal, RiskStatus, RejectionReason
 
 
 @pytest.fixture
